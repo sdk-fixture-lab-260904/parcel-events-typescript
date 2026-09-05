@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": [
+      "ES2023",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "verbatimModuleSyntax": true,
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "paths": {
+      "@sdkfixturelab260904/parcel-events-sdk": [
+        "./src/index.ts"
+      ]
+    },
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "examples/**/*.ts"
+  ],
+  "exclude": [
+    "dist"
+  ]
+}
