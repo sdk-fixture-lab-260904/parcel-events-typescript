@@ -1,1 +1,5 @@
+<<<<<<< customer
+{"bundleSha":"718301da46c738b32926ec2a4c2d0bf902b5606f1f4e64b38d3f831ea468bdea","configSha":"e78a9ca4ab575d01bcd373f9bd8e82353d460254fb55fded787e806540410d7d","generator":"@doctorine/sdk-codegen","generatorVersion":"0.9.1","irSha":"f8aace4f9c1f5bf1a6fa8c592bc1b33d836d745ee330a65c24afe1bd89e9d728","kernelVersion":"0.7.1","language":"ts","package":{"name":"@sdkfixturelab260904/parcel-events-sdk","version":"1.1.0"},"sdkSha":"b568c4691a5495d81f5fcad876fadc135075bc4d40172f7034ba2a76d04197a8"}
+=======
 {"bundleSha":"6196b4f93c0d72651cd04f49afe07a1bcb677c70fd4d83ea04111af4279ba8fa","configSha":"3b30b7bffa895fb980dad02715f00f4e9bfa44b0a1609697a9abc1366c009a3d","generator":"@doctorine/sdk-codegen","generatorVersion":"0.9.1","irSha":"e21b8fd9ceb7e953777c59e3b18e411c0cfdab77418df6ab5c5f73910962ac2e","kernelVersion":"0.7.1","language":"ts","package":{"name":"@sdkfixturelab260904/parcel-events-sdk","version":"1.3.0"},"sdkSha":"7e097e8bde1414a44413a80ebc54b2714aae072488fdea58ce1c96b1915c653a"}
+>>>>>>> generated

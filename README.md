@@ -104,4 +104,8 @@ await verbose.get("/v1/things");
 
 ## Provenance
 
+<<<<<<< customer
+Reproducible build — see `.doctorine-sdk.json`. `sdkSha b568c4691a5495d81f5fcad876fadc135075bc4d40172f7034ba2a76d04197a8` · `configSha e78a9ca4ab575d01bcd373f9bd8e82353d460254fb55fded787e806540410d7d` · `bundleSha 718301da46c738b32926ec2a4c2d0bf902b5606f1f4e64b38d3f831ea468bdea`.
+=======
 Reproducible build — see `.doctorine-sdk.json`. `sdkSha 7e097e8bde1414a44413a80ebc54b2714aae072488fdea58ce1c96b1915c653a` · `configSha 3b30b7bffa895fb980dad02715f00f4e9bfa44b0a1609697a9abc1366c009a3d` · `bundleSha 6196b4f93c0d72651cd04f49afe07a1bcb677c70fd4d83ea04111af4279ba8fa`.
+>>>>>>> generated
