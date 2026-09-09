@@ -46,6 +46,28 @@ export class WebhookEndpoints extends APIResource {
   }
 
   /**
+   * Retrieve a webhook endpoint
+   *
+   * `GET /v1/webhook-endpoints/{endpoint_id}` (`retrieveWebhookEndpoint`)
+   *
+   * @example
+   * const result = await client.webhookEndpoints.get("whe_00000000000000000000");
+   * console.log(result);
+   */
+  get(endpointID: string, options?: RequestOpts): APIPromise<models.WebhookEndpoint> {
+    return this._promise<models.WebhookEndpoint>(() => {
+      this._validateInput("webhook_endpoints.get", { path: { endpointID }, params: {} }, options);
+      return {
+        operation: "webhook_endpoints.get",
+        method: "GET",
+        path: `/v1/webhook-endpoints/${serializeParameter("endpoint_id", endpointID, "path", {"style":"simple","explode":false,"allowReserved":false})}`,
+        responseContract: this._contract("webhook_endpoints.get", 'response'),
+        ...options,
+      };
+    });
+  }
+
+  /**
    * List webhook endpoints
    *
    * `GET /v1/webhook-endpoints` (`listWebhookEndpoints`)
