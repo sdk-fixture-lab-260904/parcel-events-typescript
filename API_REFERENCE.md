@@ -1,6 +1,6 @@
 # @sdkfixturelab260904/parcel-events-sdk — API reference
 
-18 methods across 6 top-level resources. Every method returns an `APIPromise` (`await` it, or `.withResponse()` / `.asResponse()`); paginated methods return a page you can `for await`. Types are exported from the package root.
+19 methods across 6 top-level resources. Every method returns an `APIPromise` (`await` it, or `.withResponse()` / `.asResponse()`); paginated methods return a page you can `for await`. Types are exported from the package root.
 
 ## `client.labels`
 
@@ -114,6 +114,7 @@ console.log(result);
 ## `client.webhookEndpoints`
 
 - `client.webhookEndpoints.create(body, options?)` → `WebhookEndpoint` — `POST /v1/webhook-endpoints`
+- `client.webhookEndpoints.get(endpointID, options?)` → `WebhookEndpoint` — `GET /v1/webhook-endpoints/{endpoint_id}`
 - `client.webhookEndpoints.list(params?, options?)` → `Page<WebhookEndpointPage>` — `GET /v1/webhook-endpoints`
 - `client.webhookEndpoints.remove(endpointID, options?)` → `void` — `DELETE /v1/webhook-endpoints/{endpoint_id}`
 - `client.webhookEndpoints.update(endpointID, body, options?)` → `WebhookEndpoint` — `PATCH /v1/webhook-endpoints/{endpoint_id}`
