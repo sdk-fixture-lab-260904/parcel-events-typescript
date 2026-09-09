@@ -1,0 +1,25 @@
+# managed by Doctorine — edits will be overwritten
+name: Doctorine SDK CI
+on:
+  pull_request: {}
+  push:
+    branches:
+      - main
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out SDK
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Set up Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: "24"
+      - name: Reject unresolved merge conflicts
+        shell: bash
+        run: if git grep -n -E '^(<<<<<<< |=======|>>>>>>> )' -- .; then echo 'unresolved merge conflict markers' >&2; exit 1; fi
+      - name: Verify generated SDK
+        shell: bash
+        run: (if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then npm ci --ignore-scripts; else npm install --ignore-scripts; fi) && npm run typecheck && npm run lint && npm run test
