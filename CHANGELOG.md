@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/sdk-fixture-lab-260904/parcel-events-typescript/compare/parcel-events-sdk-v1.3.1...parcel-events-sdk-v1.3.2) (2026-09-10)
+
+
+### Bug Fixes
+
+* **ts:** regenerate @sdkfixturelab260904/parcel-events-sdk@1.2.2 (b13095e5c349) ([#10](https://github.com/sdk-fixture-lab-260904/parcel-events-typescript/issues/10)) ([0b0bcaf](https://github.com/sdk-fixture-lab-260904/parcel-events-typescript/commit/0b0bcafe3d7351ce5acf22ccb5d0298b5933cb7a))
+
 ## [1.3.1](https://github.com/sdk-fixture-lab-260904/parcel-events-typescript/compare/parcel-events-sdk-v1.3.0...parcel-events-sdk-v1.3.1) (2026-09-10)
 
 
