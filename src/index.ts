@@ -127,7 +127,7 @@ export class ParcelEventsSdk {
       logger: options.logger,
       logLevel: options.logLevel,
       sdkName: "sdkfixturelab260904-parcel-events-sdk",
-      sdkVersion: "1.2.2+sdk.b13095e5c349",
+      sdkVersion: "1.3.3+sdk.3947ef499d9c",
       idempotency: { header: "Idempotency-Key", autoGenerate: true },
     });
     this.labels = new Labels(this._client);
